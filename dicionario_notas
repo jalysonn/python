@@ -1,0 +1,17 @@
+#   Adicionar nome e nota de alunos em uma lista
+
+notas = {}
+qtd_alunos=int(input("Digite a quantidade de alunos a inserir"))
+i=1
+while i<=qtd_alunos:
+    nome = input("Digite o nome do aluno")
+    nota = float(input("Digite a nota do aluno"))
+    notas[nome] = nota
+    #print (notas)
+    soma = 0
+    media=0
+    for x in notas:
+        soma += notas[x]
+        media = soma/len(notas)
+    print("Media da turma: ",media)
+    i=i+1
